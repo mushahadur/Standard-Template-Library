@@ -30,6 +30,26 @@ int main()
 
 
     ///comment out
+
+
+/// vector input output
+
+ /*
+    int n;
+    cin>>n;
+    vector<int>v;
+    for(int i=0; i<n; i++)
+        {int a;
+        cin>>a;
+        v.push_back(a);
+        }
+
+    for(auto i:v)
+        cout<<i<<"   ";
+
+    cout<<endl;
+
+  */
     // vector nth size ..
    /*
     vector<int>v;
@@ -76,6 +96,9 @@ int main()
 
     cout<<endl;
 */
+
+
+
 
 
     /// vector empty  ... empty() boolin return <if empty = 1 else = 0>
@@ -294,7 +317,70 @@ int main()
         cout<<ar[i]<<"  ";
     cout<<endl;
 */
-/// 1:32:56
+
+
+
+
+
+    /// Vector Last element print and delete ..
+/*
+    vector<int>v = {5, 10, 20, 50};
+    for(auto i:v)
+        cout<<i<<"   ";
+    cout<<endl;
+    cout<<v.back()<<endl;
+    v.pop_back();
+    cout<<v.back()<<endl;
+*/
+
+
+
+    /// Vector First element print and delete ..
+/*
+    vector<int>v = {5, 10, 20, 50};
+    for(auto i:v)
+        cout<<i<<"   ";
+    cout<<endl;
+    cout<<"Before Erase the first Value : "<<*v.begin()<<endl;/// TLE  O(1)
+    cout<<"After erase first element :> "<<endl;
+    v.erase(v.begin());
+    cout<<"After Erase the first Value : "<<*v.begin()<<endl;
+    for(auto i:v)
+        cout<<i<<"   ";
+    cout<<endl;
+*/
+
+
+
+
+
+    /// 5 10 12 20 30 50 45 100 25       :     input
+    /// 5 12 30 45 25                    :     output
+
+    vector<int>v = {5, 10,12, 20, 30, 50, 45, 100, 25, 150,200};
+    int k=0,p=0;
+    for(auto i:v){
+        if(k==0)cout<<"Input : ";
+        cout<<i<<"   ";
+        k++;}
+    cout<<endl;
+    int siz,n=1,s;
+    siz=v.size();
+    cout<<"Size : "<<siz<<endl;
+    for(n=1; n<=v.size(); n++){
+    if(n%2!=0){
+        v.erase(v.begin()+n);
+        }
+    }
+    cout<<endl;
+    s=v.size();
+    cout<<"Size of vector : "<<s<<endl;
+    for(auto i:v){
+        if(p==0)cout<<"Output : ";
+        cout<<i<<"   ";
+        p++;}
+    cout<<endl;
+
 
 
 
