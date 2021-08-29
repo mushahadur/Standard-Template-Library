@@ -401,15 +401,70 @@ int main()
     int sz = unique(v.begin(),v.end() )-v.begin();/// O(n)
     for(int i=0; i<sz; i++)cout<<v[i]<<"  ";
     cout<<endl;
-
 */
 
-/// Time :12:00
 
 
 
 
 
+
+    /// Maximum Element Print with iterator ..
+/*
+
+    vector<int>v = {5,5,2,2,7,7,9,88,4,4,9};
+
+    for(auto u:v)cout<<u<<"  ";
+    cout<<endl;
+    vector<int>::iterator it = max_element(v.begin(),v.end());
+    cout<<"Maximum Number : "<<*it<<"  "<<endl;
+
+    /// index print
+    int n = max_element(v.begin(),v.end())-v.begin();
+    cout<<"Maximum Number this index : "<<n+1<<"  "<<endl;
+
+    ///  2, 2, 7, 7, 9
+    cout<<endl;
+    vector<int>::iterator u = max_element(v.begin()+2,v.begin()+7);
+    cout<<*u<<"  "<<endl;
+ */
+
+
+
+
+
+
+
+
+    /// Minimum Element Print with iterator ..
+/*
+
+    vector<int>v = {5,5,2,2,7,7,9,88,4,4,9}; /// O(n)
+
+    for(auto u:v)cout<<u<<"  ";
+    cout<<endl;
+    vector<int>::iterator it = min_element(v.begin(),v.end());
+    cout<<"Minimum Number : "<<*it<<"  "<<endl;
+
+    /// index print
+    int n = min_element(v.begin(),v.end())-v.begin();
+    cout<<"Minimum Number this index : "<<n+1<<"  "<<endl;
+
+    ///  7,7,9,88,4,4
+    cout<<endl;
+    vector<int>::iterator u = min_element(v.begin()+4,v.begin()+9);
+    cout<<*u<<"  "<<endl;
+*/
+
+
+
+
+
+
+
+
+
+    ///  Two D Vector .......
 
 
 
