@@ -356,7 +356,7 @@ int main()
 
     /// 5 10 12 20 30 50 45 100 25       :     input
     /// 5 12 30 45 25                    :     output
-
+/*
     vector<int>v = {5, 10,12, 20, 30, 50, 45, 100, 25, 150,200};
     int k=0,p=0;
     for(auto i:v){
@@ -365,21 +365,47 @@ int main()
         k++;}
     cout<<endl;
     int siz,n=1,s;
-    siz=v.size();
-    cout<<"Size : "<<siz<<endl;
+//    siz=v.size();
+//    cout<<"Size : "<<siz<<endl;
     for(n=1; n<=v.size(); n++){
     if(n%2!=0){
         v.erase(v.begin()+n);
         }
     }
-    cout<<endl;
-    s=v.size();
-    cout<<"Size of vector : "<<s<<endl;
+//    s=v.size();
+//    cout<<"Size of vector : "<<s<<endl;
     for(auto i:v){
         if(p==0)cout<<"Output : ";
         cout<<i<<"   ";
         p++;}
     cout<<endl;
+
+*/
+
+
+
+
+
+    /// Vector Unique value .. unique()
+/*
+
+    vector<int>v = {5,5,2,2,7,7,9,88,4,4,9};
+
+    for(auto u:v)cout<<u<<"  ";
+    cout<<endl;
+
+    sort(v.begin(),v.end() );  /// O(nLog2(n))
+    for(auto u:v)cout<<u<<"  ";
+    cout<<endl;
+
+    int sz = unique(v.begin(),v.end() )-v.begin();/// O(n)
+    for(int i=0; i<sz; i++)cout<<v[i]<<"  ";
+    cout<<endl;
+
+*/
+
+/// Time :12:00
+
 
 
 
