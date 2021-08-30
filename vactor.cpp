@@ -2,31 +2,28 @@
 using namespace std;
 int main()
 {
+/*
+    vector<int>v;
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(35);
+    v.push_back(33);
+    v.push_back(32);
+    cout<<v[4]<<endl;
+    v[4] = 10;
+    cout<<v[3]<<endl;
+    cout<<v[4]<<endl;
 
-//    vector<int>v;
-//    v.push_back(3);
-//    v.push_back(4);
-//    v.push_back(35);
-//    v.push_back(33);
-//    v.push_back(32);
-//    cout<<v[4]<<endl;
-//    v[4] = 10;
-//    cout<<v[3]<<endl;
-//    cout<<v[4]<<endl;
-
-
+*/
     // Vector size()
-
-//    cout<<v.size()<<endl;
-//    for(int i=0; i<v.size(); i++)
-//    {
-//        cout<<v[i]<<"  ";
-//    }
-//    cout<<endl;
-
-
-
-
+/*
+    cout<<v.size()<<endl;
+    for(int i=0; i<v.size(); i++)
+    {
+        cout<<v[i]<<"  ";
+    }
+    cout<<endl;
+*/
 
 
     ///comment out
@@ -464,7 +461,26 @@ int main()
 
 
 
-    ///  Two D Vector .......
+    ///  2D Vector .......
+/*
+
+    cout<<"      ..............2D Vector.............."<<endl<<endl;;
+    vector< vector<int> > v;
+    vector<int>o = {11,22,33,44,55};
+    vector<int>n = {30,50,70,90,10};
+    vector<int>m = {11,22,33,44,55};
+    vector<int>p = {10,20,30,40,50};
+
+    v.push_back(p);
+    v.push_back(o);
+    v.push_back(n);
+    v.push_back(m);
+
+    for(auto i:v){
+        for(auto j:i) cout<<j<<"  ";
+        cout<<endl;
+    }
+*/
 
 
 
@@ -472,10 +488,74 @@ int main()
 
 
 
+    /// A. Sereja and Dima  ^^ COdeforces  ->>  https://codeforces.com/contest/381/problem/A
+/*
+
+
+    int n,i;
+    cin>>n;
+    vector<int>v(n);
+    for(i=0; i<n; i++)cin>>v[i];
+
+    int s=0, d=0, f1=1;
+
+    while(!v.empty()){
+        if(f1==1)
+        {
+            if(v[0]>v.back()){
+                s = s+v[0];
+                v.erase(v.begin());
+            }
+            else{
+                s+=v.back();
+                v.pop_back();
+            }
+            f1=2;
+        }
+        else{
+           if(v[0]>v.back()){
+                d+=v[0];
+                v.erase(v.begin());
+            }
+            else{
+                d+=v.back();
+                v.pop_back();
+            }
+            f1=1;
+        }
+    }
+    cout<<s<<"  "<<d<<endl;
+*/
+
+
+
+
+
+
+
+    /// Distinct Count  ^^ hackerearth  ->> https://www.hackerearth.com/practice/data-structures/trees/binary-search-tree/practice-problems/algorithm/distinct-count/
+/*
+    int t;
+    cin>>t;
+    while(t--){
+        int n,x;
+        cin>>n>>x;
+        vector<int>v(n);
+        for(int i=0; i<n; i++)cin>>v[i];
+
+        sort(v.begin(),v.end());
+        int sz = unique(v.begin(),v.end())-v.begin();
+
+        if(sz==x)cout<<"Good"<<endl;
+        else if(sz>x)cout<<"Average"<<endl;
+        else cout<<"Bad"<<endl;
+
+    }
+*/
 
 
 
 
     return 0;
-    /// Date : 28 August 2021.
+    /// Date : 28 August 2021-30 August 2021.
 }
