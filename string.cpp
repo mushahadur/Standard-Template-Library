@@ -273,8 +273,50 @@ int main()
     cout<<a<<endl;
 */
 
+    /// remove sub string
+/*
+
+    string s = "Mushahadur  RahamanKhan pulock";
+    s.erase(s.begin()+12, s.begin()+19);
+    cout<<s<<endl;
+*/
 
 
+    /// copy sub string ..
+/*
+    string s = "mrk";
+    string k = "Md. pulock Khan";
+    copy(k.begin()+3,k.begin()+10, back_inserter(s));
+    cout<<s<<endl;
+*/
+
+
+    /// Find the sub string from the full string ..
+/*
+    string s = "Mushahadur Rahaman Khan";
+    if(s.find("Khan") != -1) cout<<"Sub String Found"<<endl;
+    else cout<<"NOt Found"<<endl;
+*/
+
+
+        /// A. String Task ^^ https://codeforces.com/contest/118/problem/A
+
+
+        bool isVowel(char c)
+        {
+        return (c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='y');
+        }
+
+        string s,ans;
+        cin>>s;
+        for(auto i:s){
+            char c = tolower(i);
+            if(!isVowel(c)){
+                ans +='.';
+                ans += c;
+            }
+        }
+        cout<<ans<<endl;
 
 
 
