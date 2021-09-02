@@ -1,4 +1,4 @@
-//! Game - Over.
+///! Game - Over.
 /** ========================================**
  ** @Author:   Md. Mushahadur Rahaman Khan
                ( City University of Bangladesh, CSE 49th )
@@ -253,7 +253,6 @@ int main()
 
 
 
-
     /// int to string
 /*
     int n = 1234;
@@ -300,13 +299,13 @@ int main()
 
 
         /// A. String Task ^^ https://codeforces.com/contest/118/problem/A
-
+/*
 
         bool isVowel(char c)
         {
         return (c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='y');
         }
-
+int main(){
         string s,ans;
         cin>>s;
         for(auto i:s){
@@ -317,33 +316,83 @@ int main()
             }
         }
         cout<<ans<<endl;
+}
+*/
+
+
+     /// The Palindrome  ^^ https://www.hackerearth.com/problem/algorithm/the-palindrome-2/
+/*
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string s,temp;
+        cin>>s;
+        temp = s;
+        reverse(temp.begin(), temp.end());
+        if(s==temp) cout<<"Yes"<<endl;
+        else cout<<"No"<<endl;
+
+    }
+*/
+
+
+    /// A. Petya and Strings  ^^ https://codeforces.com/contest/112/problem/A
+/*
+    string s,a;
+    cin>>s>>a;
+    for(int i=0; i<s.size(); i++)s[i]=tolower(s[i]);
+    for(int i=0; i<a.size(); i++)a[i]=tolower(a[i]);
+    if(s<a)cout<<"-1";
+    else if(s>a)cout<<"1";
+    else cout<<"0";
+*/
 
 
 
 
+    ///  A. Haiku  ^^ https://codeforces.com/contest/78/problem/A
+/*
+bool isVowel(char c)
+    {
+        return (c=='a' || c=='e' || c=='i' || c=='o' || c=='u');
+    }
+int main()
+{
+   optimize();
+   vector<string>v;
+   int i,j,k;
+   int cnt[]={5,7,5};
+    for(i=0; i<3; i++)
+    {
+        string s;
+        char c;
+        cin>>c;
+        getline(cin,s);
+        s+=c;
+        v.push_back(s);
+    }
+    for(k=0; k<3; k++){
+        int c=0;
+        for(auto j:v[k]){
+            if(isVowel(j))c++;
+        }
+        if(c !=cnt[k])return cout<<"NO\n",0;
+    }
+    cout<<"YES\n";
+    return 0;
+}
+*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ///  String ..
 
 
 
     return 0;
+                            /// Date : 31 August 2021 - 03 September 2021.
+
 }
 
 
