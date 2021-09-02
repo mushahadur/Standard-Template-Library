@@ -167,7 +167,113 @@ int main()
 
 
 
-    ///
+    /// Max element & Min element print
+/*
+    string s = "wzcbss";
+    cout<<"Max Element : "<<*max_element(s.begin(),s.end())<<endl;
+    cout<<"Min Element : "<<*min_element(s.begin(),s.end())<<endl;
+*/
+
+
+
+    /// String erase ..
+/*
+    string s = "wzcbs";
+    s.erase(s.end()-1);
+    cout<<s<<endl;
+
+    s.erase(s.begin());
+    cout<<s<<endl;
+
+    s.erase(s.begin()+2);
+    cout<<s<<endl;
+*/
+
+
+
+    /// String comparizom ....
+/*
+    string s="eemon",t="eeemo";
+    if(s<t)cout<<s<<" "<<"is Smallest"<<endl;
+    else cout<<t<<" "<<"is largest  "<<endl;
+*/
+
+
+
+
+    /// String dictionary sort..
+/*
+    vector<string> v;
+    v.push_back("AAAAA");
+    v.push_back("AA");
+    v.push_back("Ponik");
+    v.push_back("Pulock");
+    v.push_back("Alif");
+    v.push_back("Rifat");
+    v.push_back("Samiul");
+    v.push_back("Nirob");
+    v.push_back("mrk pulock");
+    v.push_back("lilo");
+    sort(v.begin(),v.end());
+    for(auto i:v)cout<<i<<endl;
+
+    cout<<"               is          a"<<endl<<endl;
+    sort(v.rbegin(),v.rend());
+    for(auto i:v)cout<<i<<endl;
+*/
+
+
+
+    /// specific same character remove from string
+/*
+    string s = "ASdfKKKLm";
+    s.erase(remove(s.begin(),s.end(), 'K'),s.end());
+    cout<<s<<endl;
+*/
+
+
+
+    /// Find the Unique String indevidual and double string
+/*
+    vector<string> v;
+    v.push_back("AAAAA");
+    v.push_back("AAAAA");
+    v.push_back("momo");
+    v.push_back("Pulock");
+    v.push_back("Nirob");
+    v.push_back("Rifat");
+    v.push_back("momo");
+    v.push_back("Nirob");
+    sort(v.begin(),v.end());
+    int sz = unique(v.begin(),v.end())-v.begin();
+    cout<<sz<<endl;
+    for(int i=0; i<sz; i++)cout<<v[i]<<endl;
+*/
+
+
+
+
+
+    /// int to string
+/*
+    int n = 1234;
+    string s = to_string(n);
+    cout<<s<<endl;
+    s[0] = '9';
+    cout<<s<<endl;
+*/
+
+
+    /// string to integer
+/*
+    string s = "12345";
+    int a = stoi(s);
+    cout<<a<<endl;
+    a++;
+    cout<<a<<endl;
+*/
+
+
 
 
 
